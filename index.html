@@ -1,55 +1,63 @@
 <!DOCTYPE = html>
+
 <html>
-    <head><title>My First Webpage</title></head>
+    <head>
+        
+        <link rel="stylesheet" href="style.css">
+        <title>My First Webpage</title></head>
     <body>
-        <h1>
+    <header>
+        <h1 >
             Savzikhanov Ildar
-        </h1>
+        </h1></header>
+    <section>
         <p>My mood: &#x1F600;&#x1F500;&#x1F400;</p>
         <img src="photo.jpg" alt="Me" width="200" height="200"><br>
         <h2>Web Technologies Frontend</h2>
         <h3>
             I am 19 years old, I study at the AITU
         </h3>
-        <p>
+        <p id="p-style1">
             I like play basketball and listening music.
-        </p><hr>
+        </p>
+    <hr>
         <p>Hobbies</p>
-        <ol>
+        <ol id="style-list">
             <li>Basketball</li>
             <li>Football</li>
             <li>volleyball</li>
         </ol>
         <p>My favorite sites</p>
-        <ul>
+        <ul id="style-orlist">
             <li><a href="https://www.google.com/?hl=ru">google</a></li>
             <li><a href="https://music.apple.com/ru/new">Apple Music</a></li>
             <li><a href="https://chatgpt.com/">Chat GPT</a></li>
         </ul><br>
 
-            <button>Click me</button><hr>
-            <table border="1">
-            <tr>
+            <button>Click me</button>
+        <hr>
+            <table border="1" class="table-style">
+            <tr class="cell">
                 <th>Subject</th>
                 <th>Day</th>
                 <th>Time</th>
             </tr>
-            <tr>
+            <tr class="cell">
                 <td>Intro to Finance</td>
                 <td>Mon</td>
                 <td>14:00-15:50</td>
             </tr>
-            <tr>
+            <tr class="cell">
                 <td>Intro to Finance</td>
                 <td>Fri</td>
                 <td>19:00-19:50</td>
             </tr>
-            <tr>
+            <tr class="cell">
                 <td>WEB Technologies</td>
                 <td>Thu</td>
                 <td>18:00-19:50</td>
             </tr>
-            <tr>
+            <tr class="cell">
                 <td>WEB Technologies</td>
                 <td>Fri</td>
                 <td>16:00-16:50</td>
@@ -61,23 +69,28 @@
             <label>Email:
             <input type="email" placeholder="Fill in"></label><br>
             <label>Colour:<input type="color"></label><br><br>
-            <input type="submit" value="Submit">
-        </from><br><hr><br>
-        <table border="1" >
+            <label><input type="submit" value="Submit"></label>
+        </from><br>
+        </section><hr>
+        <footer>
+        <table border="1" class="table-style" >
         <tr>
             <td width="220">
                 <h3>Menu</h3>
+               <div class="nav">
                 <ul>
-                    <li>Start</li>
-                    <li>About</li>
-                    <li>Other Information</li>
+                    <a href="#"><li>Start</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Contacts</li></a>
                 </ul>
+                </div>
             </td>
             <td width="400">
-                <h2>Main Content</h2>
+                <h1>Main Content</h1>
                 <p>Welcome to my website! Here is the main text and articles.</p>
             </td>
         </tr>
     </table>
+    </footer>
     </body>
 </html>
